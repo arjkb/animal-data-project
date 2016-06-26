@@ -30,6 +30,38 @@
         <div id="content">
         </div>
 
+        <!--Carousel demo implementation-->
+        <div id="carousel-ex-gen" class="carousel slide" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-ex-gen" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-ex-gen" data-slide-to="1"></li>
+                <li data-target="#carousel-ex-gen" data-slide-to="2"></li>
+            </ol>
+
+            <!--Wrapper for slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Coast_Garter_Snake.jpg/500px-Coast_Garter_Snake.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Coast_Garter_Snake.jpg/500px-Coast_Garter_Snake.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Coast_Garter_Snake.jpg/500px-Coast_Garter_Snake.jpg">
+                </div>
+            </div>
+
+            <!--Controls-->
+            <a class="left carousel-control" href="#carousel-ex-gen" role="button" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-ex-gen" role="button" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+
+        </div>
+
         <script id="cat-list-template" type="text/x-handlebars-template">
             <h3>Categories</h3>
 
