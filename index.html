@@ -10,7 +10,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="AnimalsData.js"></script>
     <script src="assignment.js"></script>
-    <script src="js/switcher.js"></script>
 
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="assignment.css" rel="stylesheet">
@@ -20,45 +19,24 @@
 </head>
 
 <body>
-    <!-- put your HTML here -->
-    <!--<div class="nav navbar-default">-->
-        <!--&lt;!&ndash; button that handles small screen display &ndash;&gt;-->
-        <!--<div class="navbar-header">-->
-            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"-->
-                    <!--data-target="#animal_top_navbar" aria-expanded="false">-->
-                <!--<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>-->
-            <!--</button>-->
-        <!--</div>-->
-        <!--<div class="collapse navbar-collapse" id="animal_top_navbar">-->
-            <!--<ul class="nav navbar-nav">-->
-                <!--<li class="active"><a href="#">Home</a></li>-->
-                <!--<li><a href="#">Animals</a></li>-->
-                <!--<li><a href="#">All Animals</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-
-
     <div class="container">
         <h1>Animal Data</h1>
-        <!--<ol class="breadcrumb">-->
-            <!--<li><a href="#">Parent</a></li>-->
-            <!--<li><a href="#">Child</a></li>-->
-            <!--<li><a href="#">Grandchild</a></li>-->
-        <!--</ol>-->
         <ul class="nav nav-tabs">
-            <li role="presentation"><a href="#">Categories</a></li>
-            <li role="presentation"><a href="#">Animals</a></li>
-            <li role="presentation"><a href="#">Pictures</a></li>
+            <li role="presentation"><a href="#" id="categories-tab">Categories</a></li>
+            <li role="presentation"><a href="#" id="animals-tab">Animals</a></li>
+            <li role="presentation"><a href="#" id="pic-tab">Pictures</a></li>
         </ul>
 
-        <h2>Categories</h2>
-        <ul>
-            <li><a href="reptile_slides.html">Reptiles</a></li>
-            <li><a href="mammal_slides.html">Mammals</a></li>
-            <li><a href="bird_slides.html">Birds</a></li>
-        </ul>
+        <div id="content">
+        </div>
 
+        <script id="cat-list-template" type="text/x-handlebars-template">
+            <h3>Categories</h3>
+            {{#each category}}
+            <ul>
+                <li><a href="#">{{name}}</a></li>
+            </ul>
+            {{/each}}
+        </script>
     </div>
-
 </body>
