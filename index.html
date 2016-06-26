@@ -32,11 +32,26 @@
 
         <script id="cat-list-template" type="text/x-handlebars-template">
             <h3>Categories</h3>
-            {{#each category}}
+
             <ul>
-                <li><a href="#">{{name}}</a></li>
+                {{#each category}}
+                <div class="category-name" data-id="{{@index}}">
+                    <li><a href="#">{{name}}</a></li>
+                </div>
+                {{/each}}
             </ul>
-            {{/each}}
         </script>
+
+        <script id="animal-list-template" type="text/x-handlebars-template">
+            <h3>Animal List</h3>
+            <dl>
+                {{#each animals}}
+                <dt>{{name}}</dt>
+                <dd>{{description}}</dd>
+                <br>
+                {{/each}}
+            </dl>
+        </script>
+
     </div>
 </body>
