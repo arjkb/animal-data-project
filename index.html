@@ -46,9 +46,12 @@
             <h3>Animal List</h3>
             <dl>
                 {{#each animals}}
-                <dt>{{name}}</dt>
-                <dd>{{description}}</dd>
-                <br>
+                <div class="animal-name" data-id="{{@index}}">
+                    <dt><a href="#">{{name}}</a></dt>
+                    <dd>{{description}}</dd>
+                    <br>
+                    <br>
+                </div>
                 {{/each}}
             </dl>
         </script>
